@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | Moja WebApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kontaktuj ma</h1>
+    <p>Vyplň formulár a ja sa ti ozvem čo najskôr.</p>
+
+    <form id="kontaktForm">
+      <label for="meno">Tvoje meno:</label>
+      <input type="text" id="meno" name="meno" placeholder="Zadaj svoje meno" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Zadaj svoj email" required>
+
+      <label for="sprava">Správa:</label>
+      <textarea id="sprava" name="sprava" rows="5" placeholder="Sem napíš svoju správu" required></textarea>
+
+      <button type="submit">Odoslať</button>
+      <p class="error-msg" id="errorMsg"></p>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
